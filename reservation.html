@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve a Table | Brew & Bite Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Brew & Bite Cafe</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservation">
+            <h2>Reserve Your Table</h2>
+            <p>Book your table and enjoy a delightful cafe experience!</p>
+
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your phone number" required>
+
+                <label for="date">Reservation Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Reservation Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of Guests:</label>
+                <select id="guests" name="guests" required>
+                    <option value="">Select guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests</option>
+                </select>
+
+                <label for="requests">Special Requests:</label>
+                <textarea id="requests" name="requests"
+                          placeholder="Any special requests?"></textarea>
+
+                <button type="submit">Book a Table</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Brew & Bite Cafe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

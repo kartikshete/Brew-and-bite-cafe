@@ -220,3 +220,55 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+.reservation {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fffaf3;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.reservation h2 {
+    text-align: center;
+    color: #6f4e37;
+}
+
+.reservation p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.reservation form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.reservation input,
+.reservation select,
+.reservation textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.reservation textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.reservation button {
+    padding: 12px;
+    background: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.reservation button:hover {
+    background: #4b3222;
+}
