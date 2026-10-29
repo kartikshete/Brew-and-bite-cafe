@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Brew & Bite Café</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .gallery-header {
+            text-align: center;
+            padding: 50px 20px;
+            background: #3e2723;
+            color: white;
+        }
+
+        .gallery-header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-item p {
+            text-align: center;
+            padding: 12px;
+            margin: 0;
+            background: #fff8f0;
+            color: #3e2723;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #3e2723;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .gallery-header h1 {
+                font-size: 30px;
+            }
+
+            .gallery-container {
+                padding: 15px;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<script src="script.js"></script>
+
+    <header class="gallery-header">
+        <h1>Our Gallery ☕</h1>
+        <p>A glimpse of coffee, delicious food, and beautiful moments.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main>
+        <section class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+                     alt="Freshly brewed coffee">
+                <p>Freshly Brewed Coffee</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80"
+                     alt="Cozy cafe interior">
+                <p>Our Cozy Café</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80"
+                     alt="Fresh bakery pastries">
+                <p>Fresh Bakery</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+                     alt="Coffee with milk">
+                <p>Perfect Coffee Moments</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+                     alt="Coffee and cafe essentials">
+                <p>Made with Love</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80"
+                     alt="Beautiful cafe atmosphere">
+                <p>Relax and Refresh</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Brew & Bite Café. All rights reserved.</p>
+        <p>Made with ☕ and ❤️</p>
+    </footer>
+
+</body>
+</html>

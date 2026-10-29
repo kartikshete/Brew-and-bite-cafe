@@ -635,3 +635,290 @@ html {
         gap: 10px;
     }
 }
+/* =====================================
+   BREW & BITE - PREMIUM MENU PAGE
+===================================== */
+
+.menu-page {
+    background: #fffaf4;
+    color: #38251d;
+}
+
+/* Menu Hero */
+.menu-hero {
+    min-height: 320px;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fffaf4;
+    background:
+        linear-gradient(rgba(35, 22, 16, 0.78),
+                        rgba(35, 22, 16, 0.78)),
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600")
+        center/cover no-repeat;
+}
+
+.menu-hero p {
+    color: #e8bd91;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu-hero h1 {
+    font-size: clamp(38px, 6vw, 62px);
+    margin: 12px 0;
+    line-height: 1.1;
+}
+
+.menu-hero span {
+    max-width: 550px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #f3e7dc;
+}
+
+/* Menu Main Section */
+.menu-section {
+    padding: 65px 7%;
+}
+
+.menu-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.menu-heading p {
+    color: #a56b43;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.menu-heading h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    margin: 10px 0;
+    color: #38251d;
+}
+
+.menu-heading span {
+    color: #82746b;
+    font-size: 15px;
+}
+
+/* Category Buttons */
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0 40px;
+}
+
+.menu-categories button,
+.menu-categories a {
+    padding: 11px 22px;
+    border: 1px solid #d8c4b4;
+    border-radius: 30px;
+    background: #fff;
+    color: #533a2c;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.menu-categories button:hover,
+.menu-categories button.active,
+.menu-categories a:hover,
+.menu-categories a.active {
+    background: #70462e;
+    border-color: #70462e;
+    color: #fff;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+/* Food Card */
+.menu-card {
+    background: #fff;
+    border: 1px solid #f0e6dc;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 22px rgba(56, 37, 29, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(56, 37, 29, 0.14);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.menu-card:hover img {
+    transform: scale(1.04);
+}
+
+.menu-card-image {
+    overflow: hidden;
+}
+
+.menu-card-content {
+    padding: 22px;
+}
+
+.menu-card-content h3 {
+    font-size: 21px;
+    margin: 0 0 10px;
+    color: #38251d;
+}
+
+.menu-card-content p {
+    min-height: 48px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #82746b;
+    margin-bottom: 18px;
+}
+
+.menu-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.menu-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #a56b43;
+}
+
+.menu-order-btn {
+    display: inline-block;
+    padding: 10px 17px;
+    border-radius: 7px;
+    background: #70462e;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.menu-order-btn:hover {
+    background: #a56b43;
+    transform: translateY(-2px);
+}
+
+/* Special Menu Banner */
+.menu-offer {
+    margin: 20px 7% 70px;
+    padding: 45px 25px;
+    border-radius: 18px;
+    text-align: center;
+    background: linear-gradient(135deg, #38251d, #805338);
+    color: #fffaf4;
+}
+
+.menu-offer p {
+    color: #e8bd91;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.menu-offer h2 {
+    font-size: clamp(26px, 4vw, 38px);
+    margin: 12px 0;
+}
+
+.menu-offer span {
+    display: block;
+    margin-bottom: 22px;
+    color: #f3e7dc;
+}
+
+.menu-offer a {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 7px;
+    background: #e8bd91;
+    color: #38251d;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.menu-offer a:hover {
+    background: #fffaf4;
+    transform: translateY(-3px);
+}
+
+/* Responsive: Tablets */
+@media (max-width: 950px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .menu-section {
+        padding: 55px 5%;
+    }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+    .menu-hero {
+        min-height: 270px;
+        padding: 45px 20px;
+    }
+
+    .menu-hero p {
+        letter-spacing: 2px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .menu-card img {
+        height: 240px;
+    }
+
+    .menu-section {
+        padding: 40px 6%;
+    }
+
+    .menu-categories {
+        gap: 8px;
+    }
+
+    .menu-categories button,
+    .menu-categories a {
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+
+    .menu-offer {
+        margin: 10px 6% 45px;
+        padding: 35px 20px;
+    }
+}
