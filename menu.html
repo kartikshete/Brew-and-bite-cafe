@@ -1,266 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Explore delicious coffee, snacks and desserts at Brew & Bite Café.">
-
     <title>Our Menu | Brew & Bite Café</title>
+
+    <meta name="description"
+          content="Explore the delicious coffee, snacks, and desserts at Brew & Bite Café.">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="menu-page">
 
-    <!-- Header -->
+    <!-- Premium Navigation Header -->
     <header class="site-header">
         <nav class="main-nav">
-            <a href="index.html" class="brand">☕ Brew & Bite</a>
 
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand">
+                ☕ Brew <span>&amp; Bite</span>
+            </a>
+
+            <!-- Navigation Buttons -->
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="menu.html" aria-current="page">Menu</a>
+                <a href="menu.html" class="active" aria-current="page">Menu</a>
                 <a href="Gallery.html">Gallery</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
+
         </nav>
     </header>
 
-    <main>
 
-        <!-- Hero Section -->
-        <section class="menu-hero">
-            <p>FRESHLY BREWED • FRESHLY SERVED</p>
+    <!-- Menu Hero Section -->
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <p class="hero-tagline">FRESHLY BREWED, LOVINGLY SERVED</p>
+
             <h1>Our Delicious Menu</h1>
-            <span>
-                Every sip tells a story. Every bite brings happiness.
-                Discover your favourites at Brew & Bite Café.
-            </span>
-        </section>
 
-        <!-- Menu Section -->
-        <section class="menu-section">
+            <p>
+                From your favourite coffee to delicious desserts,
+                discover something special in every bite.
+            </p>
 
-            <div class="menu-heading">
-                <p>MADE WITH LOVE</p>
-                <h2>Explore Our Favourites</h2>
-                <span>Good food, great coffee and unforgettable moments.</span>
+            <a href="#our-menu" class="menu-order-btn">
+                Explore Our Menu
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Menu Section -->
+    <main id="our-menu" class="menu-section">
+
+        <div class="menu-heading">
+            <p class="section-subtitle">MADE WITH LOVE</p>
+            <h2>Discover Our Menu</h2>
+
+            <p>
+                Fresh ingredients, amazing flavours, and a cosy café experience.
+            </p>
+        </div>
+
+
+        <!-- Menu Category Navigation -->
+        <div class="menu-categories">
+            <a href="#coffee">☕ Coffee & Drinks</a>
+            <a href="#snacks">🥪 Snacks</a>
+            <a href="#desserts">🍰 Desserts</a>
+        </div>
+
+
+        <!-- Coffee Section -->
+        <section id="coffee" class="menu-category-section">
+
+            <div class="category-heading">
+                <h2>☕ Coffee &amp; Drinks</h2>
+                <p>Your favourite drinks, freshly prepared.</p>
             </div>
 
-            <!-- Category Labels -->
-            <div class="menu-categories">
-                <a href="#coffee">☕ Coffee</a>
-                <a href="#snacks">🍔 Snacks</a>
-                <a href="#desserts">🍰 Desserts</a>
+            <div class="menu-grid">
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80"
+                        alt="Freshly brewed coffee"
+                        class="menu-card-image">
+
+                    <div class="menu-card-content">
+                        <span class="item-category">BESTSELLER</span>
+                        <h3>Classic Cappuccino</h3>
+
+                        <p>
+                            Rich espresso topped with creamy steamed milk
+                            and a soft layer of foam.
+                        </p>
+
+                        <div class="menu-card-bottom">
+                            <span class="menu-price">₹149</span>
+                            <a href="contact.html" class="menu-order-btn">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80"
+                        alt="Iced coffee in a glass"
+                        class="menu-card-image">
+
+                    <div class="menu-card-content">
+                        <span class="item-category">CUSTOMER FAVOURITE</span>
+                        <h3>Cold Coffee</h3>
+
+                        <p>
+                            Chilled coffee blended with milk for
+                            a refreshing café-style drink.
+                        </p>
+
+                        <div class="menu-card-bottom">
+                            <span class="menu-price">₹169</span>
+                            <a href="contact.html" class="menu-order-btn">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80"
+                        alt="Latte coffee"
+                        class="menu-card-image">
+
+                    <div class="menu-card-content">
+                        <span class="item-category">COFFEE CLASSIC</span>
+                        <h3>Café Latte</h3>
+
+                        <p>
+                            Smooth espresso combined with steamed milk
+                            for a perfectly balanced flavour.
+                        </p>
+
+                        <div class="menu-card-bottom">
+                            <span class="menu-price">₹159</span>
+                            <a href="contact.html" class="menu-order-btn">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=700&q=80"
+                        alt="Hot espresso coffee"
+                        class="menu-card-image">
+
+                    <div class="menu-card-content">
+                        <span class="item-category">STRONG & BOLD</span>
+                        <h3>Espresso</h3>
+
+                        <p>
+                            A small cup of bold, aromatic coffee
+                            for a quick energy boost.
+                        </p>
+
+                        <div class="menu-card-bottom">
+                            <span class="menu-price">₹99</span>
+                            <a href="contact.html" class="menu-order-btn">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
             </div>
-
-            <!-- Coffee -->
-            <section id="coffee" class="menu-category-section">
-                <h2 class="category-title">☕ Coffee & Beverages</h2>
-
-                <div class="menu-grid">
-
-                    <article class="menu-card">
-                        <div class="menu-card-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=600"
-                                alt="Fresh espresso coffee"
-                                loading="lazy">
-                        </div>
-                        <div class="menu-card-content">
-                            <span class="item-category">COFFEE</span>
-                            <h3>Espresso</h3>
-                            <p>Rich, bold and freshly brewed coffee for your perfect start.</p>
-                            <div class="menu-card-bottom">
-                                <span class="menu-price">₹99</span>
-                                <a href="contact.html" class="menu-order-btn">Enquire Now ↗</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="menu-card">
-                        <div class="menu-card-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=600"
-                                alt="Creamy cappuccino"
-                                loading="lazy">
-                        </div>
-                        <div class="menu-card-content">
-                            <span class="item-category">COFFEE</span>
-                            <h3>Cappuccino</h3>
-                            <p>Smooth espresso topped with steamed milk and creamy foam.</p>
-                            <div class="menu-card-bottom">
-                                <span class="menu-price">₹149</span>
-                                <a href="contact.html" class="menu-order-btn">Enquire Now ↗</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="menu-card">
-                        <div class="menu-card-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600"
-                                alt="Café latte in a cup"
-                                loading="lazy">
-                        </div>
-                        <div class="menu-card-content">
-                            <span class="item-category">COFFEE</span>
-                            <h3>Café Latte</h3>
-                            <p>Silky steamed milk combined with a rich espresso shot.</p>
-                            <div class="menu-card-bottom">
-                                <span class="menu-price">₹159</span>
-                                <a href="contact.html" class="menu-order-btn">Enquire Now ↗</a>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </section>
-
-            <!-- Snacks -->
-            <section id="snacks" class="menu-category-section">
-                <h2 class="category-title">🍔 Snacks & Quick Bites</h2>
-
-                <div class="menu-grid">
-
-                    <article class="menu-card">
-                        <div class="menu-card-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600"
-                                alt="Delicious burger"
-                                loading="lazy">
-                        </div>
-                        <div class="menu-card-content">
-                            <span class="item-category">SNACKS</span>
-                            <h3>Veg Burger</h3>
-                            <p>A delicious burger with fresh vegetables and tasty sauces.</p>
-                            <div class="menu-card-bottom">
-                                <span class="menu-price">₹129</span>
-                                <a href="contact.html" class="menu-order-btn">Enquire Now ↗</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="menu-card">
-                        <div class="menu-card-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=600"
-                                alt="Cheesy Margherita pizza"
-                                loading="lazy">
-                        </div>
-                        <div class="menu-card-content">
-                            <span class="item-category">SNACKS</span>
-                            <h3>Margherita Pizza</h3>
-                            <p>Classic cheesy pizza topped with herbs and fresh flavours.</p>
-                            <div class="menu-card-bottom">
-                                <span class="menu-price">₹199</span>
-                                <a href="contact.html" class="menu-order-btn">Enquire Now ↗</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="menu-card">
-                        <div class="menu-card-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600"
-                                alt="Crispy golden French fries"
-                                loading="lazy">
-                        </div>
-                        <div class="menu-card-content">
-                            <span class="item-category">SNACKS</span>
-                            <h3>French Fries</h3>
-                            <p>Crispy golden potato fries served with a delicious dip.</p>
-                            <div class="menu-card-bottom">
-                                <span class="menu-price">₹99</span>
-                                <a href="contact.html" class="menu-order-btn">Enquire Now ↗</a>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </section>
-
-            <!-- Desserts -->
-            <section id="desserts" class="menu-category-section">
-                <h2 class="category-title">🍰 Desserts & Sweet Treats</h2>
-
-                <div class="menu-grid">
-
-                    <article class="menu-card">
-                        <div class="menu-card-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600"
-                                alt="Rich chocolate brownie"
-                                loading="lazy">
-                        </div>
-                        <div class="menu-card-content">
-                            <span class="item-category">DESSERT</span>
-                            <h3>Chocolate Brownie</h3>
-                            <p>A soft, chocolatey brownie for your sweet cravings.</p>
-                            <div class="menu-card-bottom">
-                                <span class="menu-price">₹119</span>
-                                <a href="contact.html" class="menu-order-btn">Enquire Now ↗</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="menu-card">
-                        <div class="menu-card-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600"
-                                alt="Chocolate celebration cake"
-                                loading="lazy">
-                        </div>
-                        <div class="menu-card-content">
-                            <span class="item-category">DESSERT</span>
-                            <h3>Chocolate Cake</h3>
-                            <p>Moist chocolate cake layered with rich chocolate flavour.</p>
-                            <div class="menu-card-bottom">
-                                <span class="menu-price">₹139</span>
-                                <a href="contact.html" class="menu-order-btn">Enquire Now ↗</a>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </section>
-
         </section>
 
-        <!-- Special Offer -->
+
+        <!-- Snacks Section -->
+        <section id="snacks" class="menu-category-section">
+
+            <div class="category-heading">
+                <h2>🥪 Snacks &amp; Bites</h2>
+                <p>Delicious bites to make your coffee break better.</p>
+            </div>
+
+            <div class="menu-grid">
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=700&q=80"
+                        alt="Fresh sandwich"
+                        class="menu-card-image">
+
+                    <div class="menu-card-content">
+                        <span class="item-category">QUICK BITE</span>
+                        <h3>Grilled Sandwich</h3>
+
+                        <p>
+                            A crispy grilled sandwich filled with
+                            delicious vegetables and cheese.
+                        </p>
+
+                        <div class="menu-card-bottom">
+                            <span class="menu-price">₹129</span>
+                            <a href="contact.html" class="menu-order-btn">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80"
+                        alt="Fresh pizza"
+                        class="menu-card-image">
+
+                    <div class="menu-card-content">
+                        <span class="item-category">POPULAR</span>
+                        <h3>Cheese Pizza</h3>
+
+                        <p>
+                            A delicious pizza topped with melted cheese
+                            and flavourful toppings.
+                        </p>
+
+                        <div class="menu-card-bottom">
+                            <span class="menu-price">₹199</span>
+                            <a href="contact.html" class="menu-order-btn">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80"
+                        alt="Crispy French fries"
+                        class="menu-card-image">
+
+                    <div class="menu-card-content">
+                        <span class="item-category">CRISPY & TASTY</span>
+                        <h3>French Fries</h3>
+
+                        <p>
+                            Golden, crispy potato fries served
+                            as the perfect snack.
+                        </p>
+
+                        <div class="menu-card-bottom">
+                            <span class="menu-price">₹99</span>
+                            <a href="contact.html" class="menu-order-btn">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80"
+                        alt="Freshly prepared pizza slice"
+                        class="menu-card-image">
+
+                    <div class="menu-card-content">
+                        <span class="item-category">CAFÉ SPECIAL</span>
+                        <h3>Cheese Garlic Bread</h3>
+
+                        <p>
+                            Warm garlic bread topped with
+                            cheese and aromatic herbs.
+                        </p>
+
+                        <div class="menu-card-bottom">
+                            <span class="menu-price">₹119</span>
+                            <a href="contact.html" class="menu-order-btn">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Desserts Section -->
+        <section id="desserts" class="menu-category-section">
+
+            <div class="category-heading">
+                <h2>🍰 Desserts &amp; Sweet Treats</h2>
+                <p>Something sweet to complete your café experience.</p>
+            </div>
+
+            <div class="menu-grid">
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+                        alt="Chocolate cake"
+                        class="menu-card-image">
+
+                    <div class="menu-card-content">
+                        <span class="item-category">CHOCOLATE LOVER</span>
+                        <h3>Chocolate Cake</h3>
+
+                        <p>
+                            A rich chocolate cake with a soft texture
+                            and delicious chocolate flavour.
+                        </p>
+
+                        <div class="menu-card-bottom">
+                            <span class="menu-price">₹149</span>
+                            <a href="contact.html" class="menu-order-btn">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=80"
+                        alt="Ice cream dessert"
+                        class="menu-card-image">
+
+                    <div class="menu-card-content">
+                        <span class="item-category">COOL TREAT</span>
+                        <h3>Ice Cream Sundae</h3>
+
+                        <p>
+                            Creamy ice cream served with delicious
+                            toppings for a sweet treat.
+                        </p>
+
+                        <div class="menu-card-bottom">
+                            <span class="menu-price">₹129</span>
+                            <a href="contact.html" class="menu-order-btn">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=700&q=80"
+                        alt="Fresh cupcakes"
+                        class="menu-card-image">
+
+                    <div class="menu-card-content">
+                        <span class="item-category">SWEET FAVOURITE</span>
+                        <h3>Chocolate Cupcake</h3>
+
+                        <p>
+                            A soft, fluffy cupcake topped with
+                            smooth chocolate frosting.
+                        </p>
+
+                        <div class="menu-card-bottom">
+                            <span class="menu-price">₹89</span>
+                            <a href="contact.html" class="menu-order-btn">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80"
+                        alt="Freshly baked bakery treat"
+                        class="menu-card-image">
+
+                    <div class="menu-card-content">
+                        <span class="item-category">FRESHLY BAKED</span>
+                        <h3>Butter Croissant</h3>
+
+                        <p>
+                            A flaky, buttery pastry that pairs
+                            perfectly with your morning coffee.
+                        </p>
+
+                        <div class="menu-card-bottom">
+                            <span class="menu-price">₹109</span>
+                            <a href="contact.html" class="menu-order-btn">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Special Offer Section -->
         <section class="menu-offer">
-            <p>A SPECIAL TREAT FOR YOU</p>
-            <h2>The Café Combo ☕</h2>
-            <span>
-                Enjoy a delicious burger, crispy fries and refreshing coffee
-                together for just ₹249.
-            </span>
-            <a href="contact.html">Enquire About Our Combo ↗</a>
+            <div class="menu-offer-content">
+                <p class="section-subtitle">A LITTLE EXTRA HAPPINESS</p>
+
+                <h2>Your Coffee Break Deserves a Treat!</h2>
+
+                <p>
+                    Enjoy your favourite coffee with a delicious snack
+                    and make every café visit special.
+                </p>
+
+                <a href="contact.html" class="menu-order-btn">
+                    Contact Us
+                </a>
+            </div>
         </section>
 
+
+        <!-- Menu Note -->
         <p class="menu-note">
-            Note: All prices are in Indian Rupees (₹) and may vary.
+            Note: Menu items, availability, and prices may change.
+            Please contact the café to confirm current details.
         </p>
 
     </main>
 
+
     <!-- Footer -->
     <footer class="site-footer">
-        <h2>☕ Brew & Bite Café</h2>
-        <p>Fresh Flavours, Happy Moments!</p>
 
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="Gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+        <div class="footer-content">
+            <a href="index.html" class="footer-brand">
+                ☕ Brew &amp; Bite Café
+            </a>
+
+            <p>
+                Good coffee, delicious bites, and memorable moments.
+            </p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 Brew &amp; Bite Café. All rights reserved.
+            </p>
         </div>
 
-        <p>&copy; 2026 Brew &amp; Bite Café. All rights reserved.</p>
-        <p>Made with love for coffee and food lovers.</p>
     </footer>
 
 </body>
