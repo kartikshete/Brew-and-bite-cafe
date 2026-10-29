@@ -922,3 +922,89 @@ html {
         padding: 35px 20px;
     }
 }
+/* MENU CATEGORY BUTTONS */
+.menu-page .menu-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 35px 0 50px;
+}
+
+.menu-page .menu-categories a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    padding: 13px 24px;
+    background: #ffffff;
+    color: #70462e;
+    border: 2px solid #70462e;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-page .menu-categories a:hover {
+    background: #70462e;
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(112, 70, 46, 0.25);
+}
+
+/* ENQUIRE BUTTONS */
+.menu-page .menu-order-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    background: #70462e;
+    color: #ffffff;
+    border: 2px solid #70462e;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-page .menu-order-btn:hover {
+    background: #a56b43;
+    border-color: #a56b43;
+    box-shadow: 0 5px 15px rgba(112, 70, 46, 0.2);
+    transform: translateY(-3px);
+}
+
+/* SPECIAL OFFER BUTTON */
+.menu-page .menu-offer a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 26px;
+    background: #edc49b;
+    color: #38251d;
+    border: 2px solid #edc49b;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.menu-page .menu-offer a:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* KEYBOARD ACCESSIBILITY */
+.menu-page .menu-categories a:focus-visible,
+.menu-page .menu-order-btn:focus-visible,
+.menu-page .menu-offer a:focus-visible {
+    outline: 3px solid #d6a56c;
+    outline-offset: 4px;
+}
