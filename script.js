@@ -109,3 +109,16 @@ function showMessage(form, message) {
 
     messageBox.textContent = message;
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector(".menu-toggle");
+    const navList = document.querySelector("nav ul");
+
+    if (!menuButton || !navList) return;
+
+    menuButton.addEventListener("click", function () {
+        const isOpen = navList.classList.toggle("nav-open");
+
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.textContent = isOpen ? "✕" : "☰";
+    });
+});
