@@ -272,3 +272,46 @@ footer p {
 .reservation button:hover {
     background: #4b3222;
 }
+/* Mobile Navigation */
+.menu-toggle {
+    display: none;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #6f4e37;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Form Success Message */
+.form-message {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    background: #e5f6e8;
+    color: #216b32;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        padding: 15px 0;
+    }
+
+    nav ul.nav-open {
+        display: flex;
+    }
+}
