@@ -122,3 +122,46 @@ document.addEventListener("DOMContentLoaded", function () {
         menuButton.textContent = isOpen ? "✕" : "☰";
     });
 });
+// ===== Dark and Light Mode =====
+
+document.addEventListener("DOMContentLoaded", function () {
+    const themeToggle = document.getElementById("theme-toggle");
+
+    if (!themeToggle) return;
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("cafe-theme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+
+    updateThemeButton();
+
+    // Toggle theme on click
+    themeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        const currentTheme = document.body.classList.contains("dark-mode")
+            ? "dark"
+            : "light";
+
+        localStorage.setItem("cafe-theme", currentTheme);
+
+        updateThemeButton();
+    });
+
+    // Update button text
+    function updateThemeButton() {
+        const isDark = document.body.classList.contains("dark-mode");
+
+        themeToggle.textContent = isDark
+            ? "☀️ Light Mode"
+            : "🌙 Dark Mode";
+
+        themeToggle.setAttribute(
+            "aria-label",
+            isDark ? "Switch to light mode" : "Switch to dark mode"
+        );
+    }
+});

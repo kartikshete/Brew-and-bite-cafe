@@ -4,322 +4,306 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover the story, passion, and specialities of Brew & Bite Café.">
-    <title>About Us | Brew & Bite Café</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <style>
+<title>About Us | Brew & Bite Café</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .about-hero {
+        background:
+            linear-gradient(rgba(35, 22, 15, 0.7), rgba(35, 22, 15, 0.7)),
+            url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1600&q=80');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+    }
+    .about-hero h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    .about-container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 60px 20px;
+    }
+    .about-story {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+    .about-story img {
+        width: 48%;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+    .about-text {
+        flex: 1;
+    }
+    .about-text h2,
+    .section-title {
+        color: #6f4e37;
+        margin-bottom: 20px;
+    }
+    .about-text p {
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+    .mission-vision {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin-bottom: 60px;
+    }
+    .info-card {
+        background: #fff8f0;
+        padding: 30px;
+        border-radius: 12px;
+        border: 1px solid #ead8c5;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+    .info-card:hover {
+        transform: translateY(-5px);
+    }
+    .info-card h3 {
+        color: #6f4e37;
+        margin-bottom: 15px;
+    }
+    .specialities {
+        text-align: center;
+    }
+    .speciality-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin-top: 30px;
+    }
+    .speciality-card {
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+    .speciality-card:hover {
+        transform: translateY(-6px);
+    }
+    .speciality-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .speciality-card h3 {
+        color: #6f4e37;
+        padding: 15px 10px 5px;
+    }
+    .speciality-card p {
+        padding: 5px 15px 20px;
+        line-height: 1.6;
+    }
+    .about-cta {
+        text-align: center;
+        background: #6f4e37;
+        color: white;
+        padding: 45px 20px;
+        border-radius: 12px;
+        margin-top: 60px;
+    }
+    .about-cta h2 {
+        margin-bottom: 15px;
+    }
+    .about-cta a {
+        display: inline-block;
+        background: #f5c16c;
+        color: #2b1b12;
+        padding: 12px 25px;
+        margin-top: 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .about-cta a:hover {
+        background: #ffffff;
+    }
+    .about-footer {
+        text-align: center;
+        padding: 20px;
+        background: #3e2723;
+        color: white;
+    }
+    .about-footer p {
+        margin: 8px 0;
+    }
+    /* Dark mode */
+    body.dark-mode .info-card,
+    body.dark-mode .speciality-card {
+        background: #292421;
+        color: #f5f0eb;
+        border-color: #514237;
+    }
+    body.dark-mode .about-text h2,
+    body.dark-mode .section-title,
+    body.dark-mode .info-card h3,
+    body.dark-mode .speciality-card h3 {
+        color: #e5b887;
+    }
+    @media (max-width: 768px) {
         .about-hero {
-            background: linear-gradient(rgba(35, 22, 15, 0.7), rgba(35, 22, 15, 0.7)),
-                        url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
+            padding: 70px 20px;
         }
-
         .about-hero h1 {
-            font-size: 3rem;
-            margin-bottom: 15px;
+            font-size: 2.2rem;
         }
-
-        .about-container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 60px 20px;
-        }
-
         .about-story {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            margin-bottom: 60px;
+            flex-direction: column;
         }
-
         .about-story img {
-            width: 48%;
-            border-radius: 15px;
-            object-fit: cover;
-        }
-
-        .about-text {
-            flex: 1;
-        }
-
-        .about-text h2,
-        .section-title {
-            color: #6f4e37;
-            margin-bottom: 20px;
-        }
-
-        .about-text p {
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        .mission-vision {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-            margin-bottom: 60px;
-        }
-
-        .info-card {
-            background: #fff8f0;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid #ead8c5;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .info-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .info-card h3 {
-            color: #6f4e37;
-            margin-bottom: 15px;
-        }
-
-        .specialities {
-            text-align: center;
-        }
-
-        .speciality-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .speciality-card {
-            background: #ffffff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .speciality-card:hover {
-            transform: translateY(-6px);
-        }
-
-        .speciality-card img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
         }
-
-        .speciality-card h3 {
-            color: #6f4e37;
-            padding: 15px 10px 5px;
+        .mission-vision {
+            grid-template-columns: 1fr;
         }
-
-        .speciality-card p {
-            padding: 5px 15px 20px;
-            line-height: 1.6;
+        .speciality-grid {
+            grid-template-columns: 1fr;
         }
-
-        .about-cta {
-            text-align: center;
-            background: #6f4e37;
-            color: white;
-            padding: 45px 20px;
-            border-radius: 12px;
-            margin-top: 60px;
+        .about-container {
+            padding: 35px 15px;
         }
-
-        .about-cta h2 {
-            margin-bottom: 15px;
-        }
-
-        .about-cta a {
-            display: inline-block;
-            background: #f5c16c;
-            color: #2b1b12;
-            padding: 12px 25px;
-            margin-top: 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .about-cta a:hover {
-            background: #ffffff;
-        }
-
-        @media (max-width: 768px) {
-            .about-hero h1 {
-                font-size: 2.2rem;
-            }
-
-            .about-story {
-                flex-direction: column;
-            }
-
-            .about-story img {
-                width: 100%;
-            }
-
-            .mission-vision {
-                grid-template-columns: 1fr;
-            }
-
-            .speciality-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
-
 <body>
-    <script src="script.js"></script>
-
-
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <div class="logo">☕ Brew & Bite</div>
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html" aria-current="page">About</a></li>
-                <li><a href="reservation.html">Reservation</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="about-hero">
-        <h1>About Brew & Bite Café</h1>
-        <p>Good Coffee, Great Food, Wonderful Moments.</p>
+<!-- Navigation Header -->
+<header class="site-header">
+    <nav class="main-nav">
+        <a href="index.html" class="brand">
+            ☕ Brew <span>&amp; Bite</span>
+        </a>
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false">
+            ☰
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html" class="active" aria-current="page">About</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contact.html">Contact</a>
+            <button
+                id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Toggle dark and light mode">
+                🌙 Dark Mode
+            </button>
+        </div>
+    </nav>
+</header>
+<!-- Hero Section -->
+<section class="about-hero">
+    <h1>About Brew &amp; Bite Café</h1>
+    <p>Good Coffee, Great Food, Wonderful Moments.</p>
+</section>
+<main class="about-container">
+    <!-- Our Story -->
+    <section class="about-story">
+        <img
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80"
+            alt="Warm and welcoming café interior">
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p>
+                Welcome to Brew &amp; Bite Café, a place where great coffee,
+                delicious food, and memorable moments come together.
+            </p>
+            <p>
+                We believe a café is more than just a place to eat and drink.
+                It is a place to meet friends, share ideas, celebrate special
+                moments, and take a peaceful break from a busy day.
+            </p>
+            <p>
+                Our goal is to create a warm and welcoming atmosphere where
+                every guest feels comfortable and every visit feels special.
+            </p>
+        </div>
     </section>
-
-    <main class="about-container">
-
-        <!-- Our Story -->
-        <section class="about-story">
-            <img
-                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80"
-                alt="Warm and welcoming café interior">
-
-            <div class="about-text">
-                <h2>Our Story</h2>
-
-                <p>
-                    Welcome to Brew & Bite Café, a place where great coffee,
-                    delicious food, and memorable moments come together.
-                </p>
-
-                <p>
-                    We believe a café is more than just a place to eat and drink.
-                    It is a place to meet friends, share ideas, celebrate special
-                    moments, and take a peaceful break from a busy day.
-                </p>
-
-                <p>
-                    Our goal is to create a warm and welcoming atmosphere where
-                    every guest feels comfortable and every visit feels special.
-                </p>
-            </div>
-        </section>
-
-        <!-- Mission and Vision -->
-        <section class="mission-vision">
-
-            <div class="info-card">
-                <h3>🎯 Our Mission</h3>
-                <p>
-                    To serve delicious food and quality beverages while providing
-                    friendly service and a comfortable atmosphere for everyone.
-                </p>
-            </div>
-
-            <div class="info-card">
-                <h3>🌟 Our Vision</h3>
-                <p>
-                    To become a favourite community café known for great taste,
-                    welcoming hospitality, and unforgettable experiences.
-                </p>
-            </div>
-
-        </section>
-
-        <!-- Our Specialities -->
-        <section class="specialities">
-            <h2 class="section-title">What Makes Us Special?</h2>
-
+    <!-- Mission and Vision -->
+    <section class="mission-vision">
+        <div class="info-card">
+            <h3>🎯 Our Mission</h3>
             <p>
-                Every detail is designed to make your café experience enjoyable.
+                To serve delicious food and quality beverages while providing
+                friendly service and a comfortable atmosphere for everyone.
             </p>
-
-            <div class="speciality-grid">
-
-                <div class="speciality-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80"
-                        alt="Freshly prepared cup of coffee">
-
-                    <h3>☕ Great Coffee</h3>
-
-                    <p>
-                        Enjoy delicious coffee and refreshing beverages
-                        whenever you need a little break.
-                    </p>
-                </div>
-
-                <div class="speciality-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80"
-                        alt="Freshly baked café pastries">
-
-                    <h3>🥐 Delicious Bites</h3>
-
-                    <p>
-                        Discover tasty snacks and food options perfect
-                        for satisfying your cravings.
-                    </p>
-                </div>
-
-                <div class="speciality-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=700&q=80"
-                        alt="Comfortable café seating area">
-
-                    <h3>❤️ Cozy Ambience</h3>
-
-                    <p>
-                        Relax in a welcoming environment that's perfect
-                        for conversations, work, and spending time together.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="about-cta">
-            <h2>Come Visit Us!</h2>
-
+        </div>
+        <div class="info-card">
+            <h3>🌟 Our Vision</h3>
             <p>
-                Great coffee and wonderful moments are waiting for you.
+                To become a favourite community café known for great taste,
+                welcoming hospitality, and unforgettable experiences.
             </p>
-
-            <a href="reservation.html">Reserve Your Table</a>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Brew & Bite Café. All Rights Reserved.</p>
-        <p>Made with ❤️ for coffee lovers.</p>
-    </footer>
-
+        </div>
+    </section>
+    <!-- Our Specialities -->
+    <section class="specialities">
+        <h2 class="section-title">What Makes Us Special?</h2>
+        <p>
+            Every detail is designed to make your café experience enjoyable.
+        </p>
+        <div class="speciality-grid">
+            <div class="speciality-card">
+                <img
+                    src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80"
+                    alt="Freshly prepared cup of coffee">
+                <h3>☕ Great Coffee</h3>
+                <p>
+                    Enjoy delicious coffee and refreshing beverages
+                    whenever you need a little break.
+                </p>
+            </div>
+            <div class="speciality-card">
+                <img
+                    src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80"
+                    alt="Freshly baked café pastries">
+                <h3>🥐 Delicious Bites</h3>
+                <p>
+                    Discover tasty snacks and food options perfect
+                    for satisfying your cravings.
+                </p>
+            </div>
+            <div class="speciality-card">
+                <img
+                    src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=700&q=80"
+                    alt="Comfortable café seating area">
+                <h3>❤️ Cozy Ambience</h3>
+                <p>
+                    Relax in a welcoming environment that's perfect
+                    for conversations, work, and spending time together.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Call to Action -->
+    <section class="about-cta">
+        <h2>Come Visit Us!</h2>
+        <p>
+            Great coffee and wonderful moments are waiting for you.
+        </p>
+        <a href="reservation.html">Reserve Your Table</a>
+    </section>
+</main>
+<!-- Footer -->
+<footer class="about-footer">
+    <p>&copy; 2026 Brew &amp; Bite Café. All Rights Reserved.</p>
+    <p>Made with ❤️ for coffee lovers.</p>
+</footer>
+<!-- JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>

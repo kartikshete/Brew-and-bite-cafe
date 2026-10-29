@@ -1,151 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Brew & Bite Café. Enjoy delicious coffee, fresh food, and a cozy atmosphere.">
+
+    <meta name="description"
+        content="Welcome to Brew & Bite Café. Enjoy delicious coffee, fresh food, and a cozy atmosphere.">
+
     <title>Brew & Bite Café | Home</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<script src="script.js"></script>
 
-    
-      <header>
-    <nav>
-        <div class="logo">☕ Brew & Bite</div>
+    <!-- Premium Navigation Header -->
+    <header class="site-header">
+        <nav class="main-nav">
 
-        <button class="menu-toggle"
-                aria-label="Toggle navigation"
-                aria-expanded="false">
-            ☰
-        </button>
+            <!-- Logo -->
+            <a href="index.html" class="brand">
+                ☕ Brew <span>&amp; Bite</span>
+            </a>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="reservation.html">Reservation</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
 
-   
-    <main>
-        <section>
-            <h2>Welcome to Brew &amp; Bite</h2>
-            <p>Fresh Coffee. Delicious Food. Beautiful Moments.</p>
-        </section>
-    </main>
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <p class="hero-subtitle">WELCOME TO BREW & BITE</p>
+            <!-- Navigation Links -->
+            <div class="nav-links" id="nav-links">
 
-        <h1>Your Daily Dose<br>of Happiness ☕</h1>
+                <a href="index.html" class="active" aria-current="page">
+                    Home
+                </a>
+
+                <a href="menu.html">Menu</a>
+
+                <a href="Gallery.html">Gallery</a>
+
+                <a href="about.html">About</a>
+
+                <a href="reservation.html">Reservation</a>
+
+                <a href="contact.html">Contact</a>
+
+                <!-- Dark / Light Mode -->
+                <button
+                    id="theme-toggle"
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Switch to dark mode">
+                    🌙 Dark Mode
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-subtitle">
+                WELCOME TO BREW &amp; BITE
+            </p>
+
+            <h1>
+                Your Daily Dose<br>
+                of Happiness ☕
+            </h1>
+
+            <p>
+                Fresh coffee, delicious bites, and cozy moments.
+                Your perfect cafe experience starts here.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="menu.html" class="btn">
+                    Explore Menu
+                </a>
+
+                <a href="reservation.html" class="btn btn-outline">
+                    Book a Table
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Popular Items Section -->
+    <section class="popular-section">
+
+        <div class="section-heading">
+
+            <p>OUR FAVOURITES</p>
+
+            <h2>Popular at Brew &amp; Bite</h2>
+
+            <span>Made with love, served fresh.</span>
+
+        </div>
+
+
+        <div class="popular-container">
+
+            <!-- Cappuccino -->
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500"
+                    alt="Freshly brewed cappuccino">
+
+                <div class="food-info">
+
+                    <h3>Cappuccino</h3>
+
+                    <p>
+                        Rich espresso with creamy milk foam.
+                    </p>
+
+                    <strong>₹149</strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Butter Croissant -->
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500"
+                    alt="Fresh butter croissants">
+
+                <div class="food-info">
+
+                    <h3>Butter Croissant</h3>
+
+                    <p>
+                        Golden, flaky, and freshly baked.
+                    </p>
+
+                    <strong>₹129</strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Chocolate Cake -->
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500"
+                    alt="Delicious chocolate cake">
+
+                <div class="food-info">
+
+                    <h3>Chocolate Cake</h3>
+
+                    <p>
+                        A delicious treat for your sweet cravings.
+                    </p>
+
+                    <strong>₹159</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <a href="menu.html" class="btn menu-btn">
+            View Full Menu
+        </a>
+
+    </section>
+
+
+    <!-- Why Choose Us Section -->
+    <section class="features-section">
+
+        <div class="section-heading">
+
+            <p>THE BREW &amp; BITE EXPERIENCE</p>
+
+            <h2>More Than Just Coffee</h2>
+
+        </div>
+
+
+        <div class="features-container">
+
+            <!-- Feature 1 -->
+            <div class="feature-card">
+
+                <span>☕</span>
+
+                <h3>Freshly Brewed</h3>
+
+                <p>
+                    Enjoy freshly prepared coffee with every sip.
+                </p>
+
+            </div>
+
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+
+                <span>🥐</span>
+
+                <h3>Fresh Bites</h3>
+
+                <p>
+                    Delicious snacks made for your happy moments.
+                </p>
+
+            </div>
+
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+
+                <span>🛋️</span>
+
+                <h3>Cozy Ambience</h3>
+
+                <p>
+                    Your comfortable corner to relax, work, and connect.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Special Offer Section -->
+    <section class="offer-section">
+
+        <div>
+
+            <p>A LITTLE TREAT FOR YOU</p>
+
+            <h2>Good Coffee. Great Deals.</h2>
+
+            <p>
+                Visit us and make your everyday moments special.
+            </p>
+
+            <a href="menu.html" class="btn">
+                Discover Our Menu
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
 
         <p>
-            Fresh coffee, delicious bites, and cozy moments.
-            Your perfect cafe experience starts here.
+            &copy; 2026 Brew &amp; Bite Café.
+            All rights reserved.
         </p>
 
-        <div class="hero-buttons">
-            <a href="menu.html" class="btn">Explore Menu</a>
-            <a href="reservation.html" class="btn btn-outline">
-                Book a Table
-            </a>
-        </div>
-    </div>
-</section>
+        <div class="footer-links">
 
-<!-- Popular Items -->
-<section class="popular-section">
-    <div class="section-heading">
-        <p>OUR FAVOURITES</p>
-        <h2>Popular at Brew & Bite</h2>
-        <span>Made with love, served fresh.</span>
-    </div>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
 
-    <div class="popular-container">
-
-        <div class="food-card">
-            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500"
-                 alt="Freshly brewed coffee">
-            <div class="food-info">
-                <h3>Cappuccino</h3>
-                <p>Rich espresso with creamy milk foam.</p>
-                <strong>₹149</strong>
-            </div>
         </div>
 
-        <div class="food-card">
-            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500"
-                 alt="Fresh croissants">
-            <div class="food-info">
-                <h3>Butter Croissant</h3>
-                <p>Golden, flaky, and freshly baked.</p>
-                <strong>₹129</strong>
-            </div>
-        </div>
-
-        <div class="food-card">
-            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500"
-                 alt="Chocolate cake">
-            <div class="food-info">
-                <h3>Chocolate Cake</h3>
-                <p>A delicious treat for your sweet cravings.</p>
-                <strong>₹159</strong>
-            </div>
-        </div>
-
-    </div>
-
-    <a href="menu.html" class="btn menu-btn">View Full Menu</a>
-</section>
-
-<!-- Why Choose Us -->
-<section class="features-section">
-    <div class="section-heading">
-        <p>THE BREW & BITE EXPERIENCE</p>
-        <h2>More Than Just Coffee</h2>
-    </div>
-
-    <div class="features-container">
-        <div class="feature-card">
-            <span>☕</span>
-            <h3>Freshly Brewed</h3>
-            <p>Enjoy freshly prepared coffee with every sip.</p>
-        </div>
-
-        <div class="feature-card">
-            <span>🥐</span>
-            <h3>Fresh Bites</h3>
-            <p>Delicious snacks made for your happy moments.</p>
-        </div>
-
-        <div class="feature-card">
-            <span>🛋️</span>
-            <h3>Cozy Ambience</h3>
-            <p>Your comfortable corner to relax, work, and connect.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Special Offer -->
-<section class="offer-section">
-    <div>
-        <p> A LITTLE TREAT FOR YOU </p>
-        <h2>Good Coffee. Great Deals.</h2>
-        <p>Visit us and make your everyday moments special.</p>
-        <a href="menu.html" class="btn">Discover Our Menu</a>
-    </div>
-</section>
-    
-    <footer>
-        <p>&copy; 2026 Brew &amp; Bite Café. All rights reserved.</p>
     </footer>
 
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>

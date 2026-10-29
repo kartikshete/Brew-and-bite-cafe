@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Brew & Bite Café in Pune for enquiries, feedback, and reservations.">
     <title>Contact Us | Brew & Bite Café</title>
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 <style>
     .contact-heading {
         text-align: center;
-        padding: 30px 15px;
+        padding: 40px 15px;
+    }
+    .contact-heading h1 {
+        color: #6f4e37;
+        margin-bottom: 10px;
     }
     .contact-container {
         max-width: 1000px;
@@ -24,6 +29,7 @@
         min-width: 260px;
         padding: 25px;
         background: #fffaf4;
+        color: #3e2723;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
@@ -48,6 +54,12 @@
         border-radius: 5px;
         box-sizing: border-box;
         font-size: 15px;
+        font-family: inherit;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        outline: 2px solid #b88a60;
+        border-color: #6f4e37;
     }
     .contact-form button {
         margin-top: 15px;
@@ -58,54 +70,114 @@
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
+        transition: background 0.3s ease;
     }
     .contact-form button:hover {
         background: #4e342e;
     }
+    #formResponse {
+        margin-top: 15px;
+        color: #287a38;
+        font-weight: bold;
+        line-height: 1.5;
+    }
     .contact-footer {
         text-align: center;
         padding: 20px;
-        background: #6f4e37;
+        background: #3e2723;
         color: white;
         margin-top: 30px;
+    }
+    .contact-footer p {
+        margin: 8px 0;
+    }
+    /* Dark mode for contact content */
+    body.dark-mode .contact-info,
+    body.dark-mode .contact-form {
+        background: #292421;
+        color: #f5f0eb;
+        border: 1px solid #514237;
+    }
+    body.dark-mode .contact-container h2,
+    body.dark-mode .contact-heading h1 {
+        color: #e5b887;
+    }
+    body.dark-mode .contact-form input,
+    body.dark-mode .contact-form textarea {
+        background: #1e1b19;
+        color: #ffffff;
+        border-color: #625448;
     }
     @media (max-width: 600px) {
         .contact-container {
             padding: 12px;
+            gap: 20px;
+        }
+        .contact-info,
+        .contact-form {
+            min-width: 0;
+            width: 100%;
+            padding: 20px;
+        }
+        .contact-heading {
+            padding: 30px 15px;
         }
     }
 </style>
 </head>
-<body   >
-    <script src="script.js"></script>
-
-<header>
-    <h1>Brew & Bite Café ☕</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact</a>
+<body>
+<!-- Navigation Header -->
+<header class="site-header">
+    <nav class="main-nav">
+        <a href="index.html" class="brand">
+            ☕ Brew <span>&amp; Bite</span>
+        </a>
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false">
+            ☰
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
+            <button
+                id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Toggle dark and light mode">
+                🌙 Dark Mode
+            </button>
+        </div>
     </nav>
 </header>
+<!-- Contact Heading -->
 <main>
     <section class="contact-heading">
-        <h2>Contact Us</h2>
+        <h1>Contact Us ☕</h1>
         <p>We would love to hear from you!</p>
     </section>
+    <!-- Contact Information and Form -->
     <section class="contact-container">
         <div class="contact-info">
             <h2>Get in Touch 📍</h2>
             <p>
                 <strong>Address:</strong><br>
-                Brew & Bite Café, Pune, Maharashtra
+                Brew &amp; Bite Café, Pune, Maharashtra
             </p>
             <p>
                 <strong>Phone:</strong><br>
-                +91 9146876574
+                <a href="tel:+919146876574">+91 9146876574</a>
             </p>
             <p>
                 <strong>Email:</strong><br>
-                hello@brewandbite.com
+                <a href="mailto:hello@brewandbite.com">hello@brewandbite.com</a>
             </p>
             <p>
                 <strong>Opening Hours:</strong><br>
@@ -126,41 +198,47 @@
                     id="name"
                     name="name"
                     placeholder="Enter your name"
-                    required
-                >
+                    autocomplete="name"
+                    required>
                 <label for="email">Email Address</label>
                 <input
                     type="email"
                     id="email"
                     name="email"
                     placeholder="Enter your email"
-                    required
-                >
+                    autocomplete="email"
+                    required>
                 <label for="message">Your Message</label>
                 <textarea
                     id="message"
                     name="message"
                     rows="5"
                     placeholder="Write your message here"
-                    required
-                ></textarea>
+                    required></textarea>
                 <button type="submit">Send Message</button>
             </form>
-            <p id="formResponse" role="status"></p>
+            <p id="formResponse" role="status" aria-live="polite"></p>
         </div>
     </section>
 </main>
+<!-- Footer -->
 <footer class="contact-footer">
-    <p>&copy; 2026 Brew & Bite Café. All rights reserved.</p>
+    <p>&copy; 2026 Brew &amp; Bite Café. All rights reserved.</p>
     <p>Made with ❤️ and Coffee ☕</p>
 </footer>
+<!-- Contact Form and Navigation JavaScript -->
+<script src="script.js"></script>
 <script>
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-        document.getElementById("formResponse").textContent =
-            "Thank you! Your form has been submitted successfully.";
-        this.reset();
-    });
+    const contactForm = document.getElementById("contactForm");
+    const formResponse = document.getElementById("formResponse");
+    if (contactForm && formResponse) {
+        contactForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            formResponse.textContent =
+                "Thank you! Your form has been submitted successfully.";
+            contactForm.reset();
+        });
+    }
 </script>
 </body>
 </html>
